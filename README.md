@@ -1,0 +1,1 @@
+Go [here](https://www.nexusmods.com/stardewvalley/mods/9704) for credits, builds and general info about this mod.
