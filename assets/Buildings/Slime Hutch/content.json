@@ -1,0 +1,10 @@
+{
+	"Changes": [
+		{
+    		"Action": "EditImage",
+    		"Target": "Buildings/Slime Hutch",
+    		"FromFile": "assets/Buildings/Slime Hutch/Slime Hutch_{{season}}.png",
+			"Update": "OnTimeChange"
+    	}
+	]
+}

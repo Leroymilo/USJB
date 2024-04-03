@@ -1,0 +1,105 @@
+{
+	"Changes": [
+		{
+			"Action": "Include",
+			"FromFile": "assets/Buildings/Barn/content.json",
+			"When": {
+				"Barn": "true"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Buildings/Cabins/content.json",
+			"When": {
+				"Cabins": "true"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Buildings/Coop/content.json",
+			"When": {
+				"Coop": "true"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Buildings/Houses/content.json",
+			"When": {
+				"Houses": "true"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Buildings/Obelisks/content.json",
+			"When": {
+				"Obelisks": "true"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Buildings/Shed/content.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Buildings/Slime Hutch/content.json",
+			"When": {
+				"Slime Hutch": "true"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Buildings/Stable/content.json",
+			"When": {
+				"Stable": "true"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Buildings/Well/content.json",
+			"When": {
+				"Well": "static"
+			}
+		},
+		
+		{
+			"Action":"EditImage",
+			"Target":"Buildings/Greenhouse",
+			"FromFile":"assets/Buildings/Greenhouse_{{season}}.png",
+			"Update": "OnTimeChange",
+			"When": {
+				"Greenhouse": "true"
+			}
+   		},
+
+		{
+			"LogName": "Junimo Hut",
+    		"Action": "EditImage",
+    		"Target": "Buildings/Junimo Hut",
+    		"FromFile": "assets/Buildings/junimo_hut_{{Junimo Hut}}.png",
+			"Update": "OnTimeChange",
+			"When": {
+				"Junimo Hut": "stone, tree"
+			}
+    	},
+		
+		{
+			"Action":"EditImage",
+			"Target":"Buildings/Mill",
+			"FromFile":"assets/Buildings/Mill.png",
+			"Update": "OnTimeChange",
+			"When": {
+				"Mill": "true"
+			}
+   		},
+		
+		{
+			"Action":"EditImage",
+			"Target":"Buildings/Silo",
+			"FromFile":"assets/Buildings/Silo_{{season}}.png",
+			"Update": "OnTimeChange",
+			"When": {
+				"Silo": "true"
+			}
+		}
+	]
+}

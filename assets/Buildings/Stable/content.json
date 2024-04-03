@@ -1,0 +1,10 @@
+{
+	"Changes": [
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Stable, Buildings/Stable_PaintMask",
+			"FromFile": "assets/Buildings/Stable/{{TargetWithoutPath}}_{{season}}.png",
+			"Update": "OnTimeChange"
+		}
+	]
+}

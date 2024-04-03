@@ -1,0 +1,14 @@
+{
+	"Changes": [
+		{
+			"LogName": "Static Well",
+    		"Action": "EditImage",
+    		"Target": "Buildings/Well",
+    		"FromFile": "assets/Buildings/Well/Well_{{season}}.png",
+			"Update": "OnTimeChange",
+			"When": {
+				"Well": "static"
+			}
+   		}
+	]
+}
