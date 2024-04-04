@@ -21,7 +21,7 @@ See [this](https://github.com/Leroymilo/USJB/blob/main/images/Obelisks%20Showcas
 There have been multiple ideas for the Island Obelisk :
 - a pond with a small bridge ([prototype](https://github.com/Leroymilo/USJB/blob/main/images/obelisk_bridge_prototype.png) by myself).
 - a pond with a small island in it.
-- a single rock shaped and colored like the island (because rocks are supposed to represent island in Japanese zen-gardens)
+- a single rock shaped and colored like the island (because rocks are supposed to represent island in Japanese zen-gardens).
 
 ### Desert Obelisk
 
