@@ -11,7 +11,7 @@
 			"Action": "Include",
 			"FromFile": "assets/Buildings/Cabins/content.json",
 			"When": {
-				"Cabins": "true"
+				"HasValue:{{Cabins}}": "true"
 			}
 		},
 		{
@@ -32,7 +32,8 @@
 			"Action": "Include",
 			"FromFile": "assets/Buildings/Obelisks/content.json",
 			"When": {
-				"Obelisks": "true"
+				"Obelisks": "true",
+				"disable_obelisks": "false"
 			}
 		},
 		{
@@ -43,7 +44,7 @@
 			"Action": "Include",
 			"FromFile": "assets/Buildings/Slime Hutch/content.json",
 			"When": {
-				"Slime Hutch": "true"
+				"Slime Hutch": "normal, big"
 			}
 		},
 		{

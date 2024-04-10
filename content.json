@@ -11,13 +11,13 @@
 		"Buildings": {
 			"AllowValues": "true, false", 
 			"Default": "true",
-			"Section": "Switches",
+			"Section": "Categories",
 			"Description": "Enables/disables all farm buildings changes."
 		},
 		"Craftables": {
 			"AllowValues": "true, false", 
 			"Default": "true",
-			"Section": "Switches",
+			"Section": "Categories",
 			"Description": "Enables/disables all craftable items changes."
 		},
 		
@@ -27,9 +27,11 @@
 			"Section": "Buildings"
 		},
 		"Cabins": {
-			"AllowValues": "true, false", 
-			"Default": "true",
-			"Section": "Buildings"
+			"AllowValues": "Log, Plank, Stone", 
+			"Default": "Log, Plank, Stone",
+			"Section": "Buildings",
+			"AllowMultiple": true,
+			"AllowBlank": true
 		},
 		"Coop": {
 			"AllowValues": "true, false", 
@@ -44,7 +46,8 @@
 		"Obelisks": {
 			"AllowValues": "true, false", 
 			"Default": "true",
-			"Section": "Buildings"
+			"Section": "Buildings",
+			"Description": "Enables/disables all Obelisks.\nThis is ignored when using the Modular Zen Garden mod."
 		},
 		"Shed": {
 			"AllowValues": "disabled, shop, tea", 
@@ -57,9 +60,10 @@
 			"Section": "Buildings"
 		},
 		"Slime Hutch": {
-			"AllowValues": "true, false", 
-			"Default": "true",
-			"Section": "Buildings"
+			"AllowValues": "disabled, normal, big", 
+			"Default": "normal",
+			"Section": "Buildings",
+			"Description": "The big Slime Hutch reverts the size of the building to pre-1.6."
 		},
 		"Stable": {
 			"AllowValues": "true, false", 
@@ -90,51 +94,6 @@
 			"AllowValues": "true, false", 
 			"Default": "true",
 			"Section": "Buildings"
-		},
-
-		"Earth Border": {
-			"AllowValues": "top, right, bottom, left",
-			"Default": "top, right, bottom, left",
-			"Section": "Obelisks",
-			"AllowMultiple": true,
-			"AllowBlank": true
-		},
-		"Earth Corner": {
-			"AllowValues": "top-left, top-right, bottom-left, bottom-right",
-			"Default": "",
-			"Section": "Obelisks",
-			"AllowMultiple": true,
-			"AllowBlank": true
-		},
-
-		"Water Border": {
-			"AllowValues": "top, right, bottom, left",
-			"Default": "top, right, bottom, left",
-			"Section": "Obelisks",
-			"AllowMultiple": true,
-			"AllowBlank": true
-		},
-		"Water Corner": {
-			"AllowValues": "top-left, top-right, bottom-left, bottom-right",
-			"Default": "",
-			"Section": "Obelisks",
-			"AllowMultiple": true,
-			"AllowBlank": true
-		},
-
-		"Desert Border": {
-			"AllowValues": "top, right, bottom, left",
-			"Default": "top, right, bottom, left",
-			"Section": "Obelisks",
-			"AllowMultiple": true,
-			"AllowBlank": true
-		},
-		"Desert Corner": {
-			"AllowValues": "top-left, top-right, bottom-left, bottom-right",
-			"Default": "",
-			"Section": "Obelisks",
-			"AllowMultiple": true,
-			"AllowBlank": true
 		},
 
 		"Artisan Equipment": {
@@ -182,9 +141,68 @@
 		"Statues": {
 			"AllowValues": "disabled, static, animated",
 			"Default": "animated",
-			"Section": "Other"
+			"Section": "Statues"
+		},
+
+		"Earth Border": {
+			"AllowValues": "top, right, bottom, left",
+			"Default": "top, right, bottom, left",
+			"Section": "Obelisks",
+			"AllowMultiple": true,
+			"AllowBlank": true
+		},
+		"Earth Corner": {
+			"AllowValues": "top-left, top-right, bottom-left, bottom-right",
+			"Default": "",
+			"Section": "Obelisks",
+			"AllowMultiple": true,
+			"AllowBlank": true
+		},
+
+		"Water Border": {
+			"AllowValues": "top, right, bottom, left",
+			"Default": "top, right, bottom, left",
+			"Section": "Obelisks",
+			"AllowMultiple": true,
+			"AllowBlank": true
+		},
+		"Water Corner": {
+			"AllowValues": "top-left, top-right, bottom-left, bottom-right",
+			"Default": "",
+			"Section": "Obelisks",
+			"AllowMultiple": true,
+			"AllowBlank": true
+		},
+
+		"Desert Border": {
+			"AllowValues": "top, right, bottom, left",
+			"Default": "top, right, bottom, left",
+			"Section": "Obelisks",
+			"AllowMultiple": true,
+			"AllowBlank": true
+		},
+		"Desert Corner": {
+			"AllowValues": "top-left, top-right, bottom-left, bottom-right",
+			"Default": "",
+			"Section": "Obelisks",
+			"AllowMultiple": true,
+			"AllowBlank": true
 		}
     },
+
+	"DynamicTokens": [
+		{
+			"Name": "disable_obelisks",
+			"Value": "false"
+		},
+		{
+			"Name": "disable_obelisks",
+			"Value": "true",
+			"When": {
+				"HasMod": "leroymilo.ModularZenGarden"
+			}
+		}
+	],
 
     "Changes": [
 		{

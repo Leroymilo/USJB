@@ -1,16 +1,31 @@
 {
 	"Changes": [
 		{
-    		"Action": "EditImage",
-   			"Target": "Buildings/Log Cabin, Buildings/Plank Cabin, Buildings/Stone Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin, Buildings/Log Cabin_PaintMask",
     		"FromFile": "assets/Buildings/Cabins/{{TargetWithoutPath}}_{{season}}.png",
-			"Update": "OnTimeChange"
-    	},
+			"Update": "OnTimeChange",
+			"When": {
+				"Cabins": "Log"
+			}
+		},
 		{
-    		"Action": "EditImage",
-   			"Target": "Buildings/Log Cabin_PaintMask, Buildings/Plank Cabin_PaintMask, Buildings/Stone Cabin_PaintMask",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin, Buildings/Plank Cabin_PaintMask",
     		"FromFile": "assets/Buildings/Cabins/{{TargetWithoutPath}}_{{season}}.png",
-			"Update": "OnTimeChange"
-    	}
+			"Update": "OnTimeChange",
+			"When": {
+				"Cabins": "Plank"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin, Buildings/Stone Cabin_PaintMask",
+    		"FromFile": "assets/Buildings/Cabins/{{TargetWithoutPath}}_{{season}}.png",
+			"Update": "OnTimeChange",
+			"When": {
+				"Cabins": "Stone"
+			}
+		}
 	]
 }
