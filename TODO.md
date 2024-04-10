@@ -64,3 +64,7 @@ There's already a [Gold Clock reskin](https://www.nexusmods.com/stardewvalley/mo
 ## Fish Pond
 
 It would be nice to adapt the fish pond accessories to a Japanese style, but it's not too much at odds with the rest of the sprites to be honest, so it's low priority.
+
+## Town Buildings
+
+There have been multiple requests to apply this Content Pack to other buildings in town, and I have to admit that it is a cool idea. It's probably a LOT of work though.
