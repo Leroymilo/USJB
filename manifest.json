@@ -1,12 +1,13 @@
-{
-  "Name": "[CP] Seasonal Japanese Buildings",
-  "Author": "sonreirblah",
-  "Version": "2.3.7",
-  "Description": "An update of Sonreirblah's Japanese Buildings mod for the latest version of Stardew Valley.",
-  "UniqueID": "leroymilo.USJB",
-  "MinimumGameVersion": "1.6.2",
-  "ContentPackFor":{
+	{
+	"Name": "[CP] Seasonal Japanese Buildings",
+	"Author": "leroymilo",
+	"Version": "2.3.8",
+	"Description": "An update of Sonreirblah's Japanese Buildings mod for the latest version of Stardew Valley.",
+	"UniqueID": "leroymilo.USJB",
+	"MinimumApiVersion": "4.0",
+	"MinimumGameVersion": "1.6",
+	"ContentPackFor":{
 		"UniqueID": "Pathoschild.ContentPatcher"
 	},
-  "UpdateKeys": [ "Nexus:9704" ]
+	"UpdateKeys": [ "Nexus:9704" ]
 }
