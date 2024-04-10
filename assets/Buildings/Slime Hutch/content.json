@@ -9,7 +9,7 @@
     	},
 
 		{
-    		"Action": "EditImage",
+    		"Action": "Load",
     		"Target": "Buildings/Slime Hutch",
     		"FromFile": "assets/Buildings/Slime Hutch/Big Slime Hutch_{{season}}.png",
 			"Update": "OnTimeChange",
@@ -25,6 +25,16 @@
 					"Size": {
 						"x": 11,
 						"y": 6
+					},
+					"SourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 176,
+						"Height": 144
+					},
+					"HumanDoor": {
+						"X": 5,
+						"Y": 5
 					}
 				}
 			},
