@@ -63,7 +63,7 @@
 			"AllowValues": "disabled, normal, big", 
 			"Default": "normal",
 			"Section": "Buildings",
-			"Description": "The big Slime Hutch reverts the size of the building to pre-1.6."
+			"Description": "The big Slime Hutch reverts the size of the building to pre-1.6 : 11x6 instead of 7x4."
 		},
 		"Stable": {
 			"AllowValues": "true, false", 
