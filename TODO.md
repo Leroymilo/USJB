@@ -49,7 +49,7 @@ Not much to say about them, check this [sprite-sheet](https://github.com/Leroymi
 
 The open door sprites of the [Stone Junimo House](https://github.com/Leroymilo/USJB/blob/main/assets/Buildings/junimo_hut_stone.png) does not really match their textures.
 
-## Shipping Bin, Cat Bowls & Dog Houses
+## Shipping Bin and Cat Bowls
 
 Suggested on the mod page.
 
