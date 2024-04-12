@@ -20,6 +20,12 @@
 			"Section": "Categories",
 			"Description": "Enables/disables all craftable items changes."
 		},
+		"Furniture": {
+			"AllowValues": "true, false", 
+			"Default": "true",
+			"Section": "Categories",
+			"Description": "Enables/disables all furniture items changes."
+		},
 		
 		"Barn": {
 			"AllowValues": "true, false", 
@@ -137,11 +143,16 @@
 			"Section": "Craftables",
 			"Description": "Only includes the classic scarecrow."
 		},
-
 		"Statues": {
 			"AllowValues": "disabled, static, animated",
 			"Default": "animated",
-			"Section": "Statues"
+			"Section": "Craftables"
+		},
+
+		"Doghouses": {
+			"AllowValues": "true, false", 
+			"Default": "true",
+			"Section": "Furniture"
 		},
 
 		"Earth Border": {
@@ -188,7 +199,7 @@
 			"AllowMultiple": true,
 			"AllowBlank": true
 		}
-    },
+	},
 
 	"DynamicTokens": [
 		{
@@ -204,7 +215,7 @@
 		}
 	],
 
-    "Changes": [
+	"Changes": [
 		{
 			"Action": "Include",
 			"FromFile": "assets/Buildings/content.json",
@@ -215,9 +226,18 @@
 		},
 		{
 			"Action": "Include",
-			"FromFile": "assets/content.json",
+			"FromFile": "assets/Craftables/content.json",
 			"When": {
-				"S.J.B.": "true"
+				"S.J.B.": "true",
+				"Craftables": "true"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Furniture/content.json",
+			"When": {
+				"S.J.B.": "true",
+				"Furniture": "true"
 			}
 		},
 
@@ -228,8 +248,8 @@
 			"Action": "EditImage",
 			"Target": "Buildings/Well",
 			"FromFile": "assets/Buildings/Well/Well_{{season}}_anim.png",
-       			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 80 },
-        		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 80 },
+	   			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 80 },
+				"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 80 },
 				"AnimationFrameTime": 20,
 				"AnimationFrameCount": 12,
 			"Update": "OnTimeChange",
@@ -244,14 +264,15 @@
 			"LogName": "Animated Statue of Endless Fortune",
 			"Action": "EditImage",
 			"Target": "TileSheets/craftables",
-			"FromFile": "assets/Statues.png",
-         		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
-         		"ToArea": { "X": 112, "Y": 480, "Width": 16, "Height": 32 },
+			"FromFile": "assets/Craftables/Statues.png",
+		 		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
+		 		"ToArea": { "X": 112, "Y": 480, "Width": 16, "Height": 32 },
 				"AnimationFrameTime": 20,
 				"AnimationFrameCount": 7,
 			"Update": "OnTimeChange",
 			"When": {
 				"S.J.B.": "true",
+				"Craftables": "true",
 				"Statues": "animated"
 			}
 		},
@@ -259,16 +280,17 @@
 			"LogName": "Animated Statue of Perfection",
 			"Action": "EditImage",
 			"Target": "TileSheets/craftables",
-			"FromFile": "assets/Statues.png",
-         		"FromArea": { "X": 0, "Y": 32, "Width": 16, "Height": 32 },
-         		"ToArea": { "X": 0, "Y": 640, "Width": 16, "Height": 32 },
+			"FromFile": "assets/Craftables/Statues.png",
+		 		"FromArea": { "X": 0, "Y": 32, "Width": 16, "Height": 32 },
+		 		"ToArea": { "X": 0, "Y": 640, "Width": 16, "Height": 32 },
 				"AnimationFrameTime": 20,
 				"AnimationFrameCount": 7,
 			"Update": "OnTimeChange",
 			"When": {
 				"S.J.B.": "true",
+				"Craftables": "true",
 				"Statues": "animated"
 			}
 		}
-    ]
+	]
 }

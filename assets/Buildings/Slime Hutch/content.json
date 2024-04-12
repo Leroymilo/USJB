@@ -1,17 +1,17 @@
 {
 	"Changes": [
 		{
-    		"Action": "EditImage",
-    		"Target": "Buildings/Slime Hutch",
-    		"FromFile": "assets/Buildings/Slime Hutch/Slime Hutch_{{season}}.png",
+			"Action": "EditImage",
+			"Target": "Buildings/Slime Hutch",
+			"FromFile": "assets/Buildings/Slime Hutch/Slime Hutch_{{season}}.png",
 			"Update": "OnTimeChange",
 			"When": {"Slime Hutch": "normal"}
-    	},
+		},
 
 		{
-    		"Action": "Load",
-    		"Target": "Buildings/Slime Hutch",
-    		"FromFile": "assets/Buildings/Slime Hutch/Big Slime Hutch_{{season}}.png",
+			"Action": "Load",
+			"Target": "Buildings/Slime Hutch",
+			"FromFile": "assets/Buildings/Slime Hutch/Big Slime Hutch_{{season}}.png",
 			"Update": "OnTimeChange",
 			"When": {"Slime Hutch": "big"}
 		},

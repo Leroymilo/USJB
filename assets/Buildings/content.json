@@ -74,14 +74,14 @@
 
 		{
 			"LogName": "Junimo Hut",
-    		"Action": "EditImage",
-    		"Target": "Buildings/Junimo Hut",
-    		"FromFile": "assets/Buildings/junimo_hut_{{Junimo Hut}}.png",
+			"Action": "EditImage",
+			"Target": "Buildings/Junimo Hut",
+			"FromFile": "assets/Buildings/junimo_hut_{{Junimo Hut}}.png",
 			"Update": "OnTimeChange",
 			"When": {
 				"Junimo Hut": "stone, tree"
 			}
-    	},
+		},
 		
 		{
 			"Action":"EditImage",

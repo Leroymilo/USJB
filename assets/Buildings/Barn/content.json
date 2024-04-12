@@ -1,10 +1,10 @@
 {
 	"Changes": [
 		{
-    		"Action": "EditImage",
+			"Action": "EditImage",
    			"Target": "Buildings/Barn, Buildings/Big Barn, Buildings/Deluxe Barn, Buildings/Deluxe Barn_PaintMask",
-    		"FromFile": "assets/Buildings/Barn/{{TargetWithoutPath}}_{{season}}.png",
+			"FromFile": "assets/Buildings/Barn/{{TargetWithoutPath}}_{{season}}.png",
 			"Update": "OnTimeChange"
-    	}
+		}
 	]
 }

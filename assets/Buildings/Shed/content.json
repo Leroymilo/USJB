@@ -1,31 +1,31 @@
 {
 	"Changes": [
 		{
-    		"Action": "EditImage",
-    		"Target": "Buildings/Shed",
-    		"FromFile": "assets/Buildings/Shed/Shed_{{season}}_{{Shed}}.png",
+			"Action": "EditImage",
+			"Target": "Buildings/Shed",
+			"FromFile": "assets/Buildings/Shed/Shed_{{season}}_{{Shed}}.png",
 			"Update": "OnTimeChange",
 			"When": {
 				"Shed": "shop, tea"
 			}
-    	},
+		},
 		{
-    		"Action": "EditImage",
-    		"Target": "Buildings/Big Shed",
-    		"FromFile": "assets/Buildings/Shed/Shed_{{season}}_{{Big Shed}}.png",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Shed",
+			"FromFile": "assets/Buildings/Shed/Shed_{{season}}_{{Big Shed}}.png",
 			"Update": "OnTimeChange",
 			"When": {
 				"Big Shed": "shop, tea"
 			}
-    	},
+		},
 		{
-    		"Action": "EditImage",
-    		"Target": "Buildings/Big Shed_PaintMask",
-    		"FromFile": "assets/Buildings/Shed/Shed_PaintMask_{{season}}_{{Big Shed}}.png",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Shed_PaintMask",
+			"FromFile": "assets/Buildings/Shed/Shed_PaintMask_{{season}}_{{Big Shed}}.png",
 			"Update": "OnTimeChange",
 			"When": {
 				"Big Shed": "shop, tea"
 			}
-    	}
+		}
 	]
 }
