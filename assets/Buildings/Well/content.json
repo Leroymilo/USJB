@@ -9,6 +9,22 @@
 			"When": {
 				"Well": "static"
 			}
-   		}
+   		},
+
+		{
+			"LogName": "Remove Well Shadow",
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"Update": "OnTimeChange",
+			"When": {
+				"Well": "static, animated"
+			},
+			
+			"Fields": {
+				"Well": {
+					"DrawShadow": false
+				}
+			}
+		}
 	]
 }

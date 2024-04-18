@@ -58,7 +58,7 @@
 			"Action": "Include",
 			"FromFile": "assets/Buildings/Well/content.json",
 			"When": {
-				"Well": "static"
+				"Well": "static, animated"
 			}
 		},
 		
