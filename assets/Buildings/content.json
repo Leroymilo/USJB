@@ -82,6 +82,17 @@
 				"Junimo Hut": "stone, tree"
 			}
 		},
+		{
+			"LogName": "Junimo Hut remove shadow",
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"Update": "OnTimeChange",
+			"Fields": {
+				"Junimo Hut": {
+					"DrawShadow": false
+				}
+			}
+		},
 		
 		{
 			"Action":"EditImage",
