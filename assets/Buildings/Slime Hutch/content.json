@@ -4,7 +4,6 @@
 			"Action": "EditImage",
 			"Target": "Buildings/Slime Hutch",
 			"FromFile": "assets/Buildings/Slime Hutch/Slime Hutch_{{season}}.png",
-			"Update": "OnTimeChange",
 			"When": {"Slime Hutch": "normal"}
 		},
 
@@ -12,14 +11,12 @@
 			"Action": "Load",
 			"Target": "Buildings/Slime Hutch",
 			"FromFile": "assets/Buildings/Slime Hutch/Big Slime Hutch_{{season}}.png",
-			"Update": "OnTimeChange",
 			"When": {"Slime Hutch": "big"}
 		},
 		{
 			"LogName": "Big Slime Hutch data edit",
 			"Action": "EditData",
 			"Target": "Data/Buildings",
-			"Update": "OnTimeChange",
 			"Fields": {
 				"Slime Hutch": {
 					"Size": {

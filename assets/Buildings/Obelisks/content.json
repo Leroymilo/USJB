@@ -17,7 +17,6 @@
 			"LogName": "Obelisks data edit",
 			"Action": "EditData",
 			"Target": "Data/Buildings",
-			"Update": "OnTimeChange",
 			"Fields": {
 				"Earth Obelisk": {
 					"DrawShadow": false,

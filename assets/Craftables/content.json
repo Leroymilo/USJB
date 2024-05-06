@@ -7,7 +7,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 32, "Y": 32, "Width": 32, "Height": 32 },
 				"ToArea": 	{ "X": 32, "Y": 32, "Width": 32, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Artisan Equipment": "true"
 			}
@@ -19,7 +18,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 112, "Y": 32, "Width": 16, "Height": 32 },
 				"ToArea": 	{ "X": 112, "Y": 32, "Width": 16, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Artisan Equipment": "true"
 			}
@@ -31,7 +29,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 64, "Y": 32, "Width": 16, "Height": 32 },
 				"ToArea": 	{ "X": 64, "Y": 32, "Width": 16, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Braziers": "true"
 			}
@@ -44,7 +41,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 112, "Y": 544, "Width": 16, "Height": 32 },
 				"ToArea": 	{ "X": 112, "Y": 544, "Width": 16, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Braziers": "true"
 			}
@@ -56,7 +52,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 48, "Y": 576, "Width": 32, "Height": 32 },
 				"ToArea": 	{ "X": 48, "Y": 576, "Width": 32, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Braziers": "true"
 			}
@@ -68,7 +63,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 96, "Y": 576, "Width": 16, "Height": 32 },
 				"ToArea": 	{ "X": 96, "Y": 576, "Width": 16, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Braziers": "true"
 			}
@@ -81,7 +75,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 0, "Y": 608, "Width": 32, "Height": 32 },
 				"ToArea": 	{ "X": 0, "Y": 608, "Width": 32, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Lamp-Posts": "true"
 			}
@@ -94,7 +87,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 80, "Y": 32, "Width": 32, "Height": 32 },
 				"ToArea": 	{ "X": 80, "Y": 32, "Width": 32, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Refining Equipment": "true"
 			}
@@ -106,7 +98,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 16, "Y": 32, "Width": 16, "Height": 32 },
 				"ToArea": 	{ "X": 16, "Y": 32, "Width": 16, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Refining Equipment": "true"
 			}
@@ -118,7 +109,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 16, "Y": 96, "Width": 16, "Height": 32 },
 				"ToArea": 	{ "X": 16, "Y": 96, "Width": 16, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Refining Equipment": "true"
 			}
@@ -131,7 +121,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 32, "Y": 512, "Width": 96, "Height": 32 },
 				"ToArea": 	{ "X": 32, "Y": 512, "Width": 96, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Chest": "true"
 			}
@@ -143,7 +132,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 0, "Y": 672, "Width": 96, "Height": 64 },
 				"ToArea": 	{ "X": 0, "Y": 672, "Width": 96, "Height": 64 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Chest": "true"
 			}
@@ -156,7 +144,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 80, "Y": 128, "Width": 32, "Height": 32 },
 				"ToArea": 	{ "X": 80, "Y": 128, "Width": 32, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Signs": "true"
 			}
@@ -169,7 +156,6 @@
 			"FromFile": "assets/Craftables/Craftables.png",
 				"FromArea": { "X": 0, "Y": 32, "Width": 16, "Height": 32 },
 				"ToArea": 	{ "X": 0, "Y": 32, "Width": 16, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Scarecrow": "true"
 			}
@@ -182,7 +168,6 @@
 			"FromFile": "assets/Craftables/Statues.png",
 		 		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
 		 		"ToArea": { "X": 112, "Y": 480, "Width": 16, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Statues": "static"
 			}
@@ -194,7 +179,6 @@
 			"FromFile": "assets/Craftables/Statues.png",
 		 		"FromArea": { "X": 0, "Y": 32, "Width": 16, "Height": 32 },
 		 		"ToArea": { "X": 0, "Y": 640, "Width": 16, "Height": 32 },
-			"Update": "OnTimeChange",
 			"When": {
 				"Statues": "static"
 			}

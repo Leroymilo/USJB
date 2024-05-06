@@ -252,7 +252,6 @@
 				"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 80 },
 				"AnimationFrameTime": 20,
 				"AnimationFrameCount": 12,
-			"Update": "OnTimeChange",
 			"when": {
 				"S.J.B.": "true",
 				"Buildings": "true",
@@ -269,7 +268,6 @@
 		 		"ToArea": { "X": 112, "Y": 480, "Width": 16, "Height": 32 },
 				"AnimationFrameTime": 20,
 				"AnimationFrameCount": 7,
-			"Update": "OnTimeChange",
 			"When": {
 				"S.J.B.": "true",
 				"Craftables": "true",
@@ -285,7 +283,6 @@
 		 		"ToArea": { "X": 0, "Y": 640, "Width": 16, "Height": 32 },
 				"AnimationFrameTime": 20,
 				"AnimationFrameCount": 7,
-			"Update": "OnTimeChange",
 			"When": {
 				"S.J.B.": "true",
 				"Craftables": "true",

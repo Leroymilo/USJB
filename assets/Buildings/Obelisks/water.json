@@ -4,7 +4,6 @@
 			"Action": "Load",
 			"Target": "Buildings/Water Obelisk",
 			"FromFile": "assets/Buildings/Obelisks/water_base_winter.png",
-			"Update": "OnTimeChange",
 			"When": {"season": "winter"},
 			"Priority": "Low"
 		},
@@ -12,7 +11,6 @@
 			"Action": "Load",
 			"Target": "Buildings/Water Obelisk",
 			"FromFile": "assets/Buildings/Obelisks/water_base.png",
-			"Update": "OnTimeChange",
 			"When": {"season": "spring, summer, fall"},
 			"Priority": "Low"
 		},
@@ -23,7 +21,6 @@
 			"FromFile": "assets/Buildings/Obelisks/borders.png",
 				"FromArea": { "X": 144, "Y": 0, "Width": 24, "Height": 48 },
 				"ToArea": { "X": 0, "Y": 0, "Width": 24, "Height": 48 },
-			"Update": "OnTimeChange",
 			"When": {"Water Corner": "top-left"},
 			"Priority": "Late+1"
 		},
@@ -34,7 +31,6 @@
 			"FromFile": "assets/Buildings/Obelisks/borders.png",
 				"FromArea": { "X": 168, "Y": 0, "Width": 24, "Height": 48 },
 				"ToArea": { "X": 24, "Y": 0, "Width": 24, "Height": 48 },
-			"Update": "OnTimeChange",
 			"When": {"Water Corner": "top-right"},
 			"Priority": "Late+1"
 		},
@@ -45,7 +41,6 @@
 			"FromFile": "assets/Buildings/Obelisks/borders.png",
 				"FromArea": { "X": 144, "Y": 48, "Width": 24, "Height": 48 },
 				"ToArea": { "X": 0, "Y": 48, "Width": 24, "Height": 48 },
-			"Update": "OnTimeChange",
 			"When": {"Water Corner": "bottom-left"},
 			"Priority": "Late+1"
 		},
@@ -56,7 +51,6 @@
 			"FromFile": "assets/Buildings/Obelisks/borders.png",
 				"FromArea": { "X": 168, "Y": 48, "Width": 24, "Height": 48 },
 				"ToArea": { "X": 24, "Y": 48, "Width": 24, "Height": 48 },
-			"Update": "OnTimeChange",
 			"When": {"Water Corner": "bottom-right"},
 			"Priority": "Late+1"
 		},
@@ -67,7 +61,6 @@
 			"FromFile": "assets/Buildings/Obelisks/borders.png",
 				"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 48 },
 				"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 48 },
-			"Update": "OnTimeChange",
 			"When": {"Water Border": "top"},
 			"Priority": "Late+2"
 		},
@@ -78,7 +71,6 @@
 			"FromFile": "assets/Buildings/Obelisks/borders.png",
 				"FromArea": { "X": 96, "Y": 0, "Width": 24, "Height": 96 },
 				"ToArea": { "X": 0, "Y": 0, "Width": 24, "Height": 96 },
-			"Update": "OnTimeChange",
 			"When": {"Water Border": "left"},
 			"Priority": "Late+3"
 		},
@@ -89,7 +81,6 @@
 			"FromFile": "assets/Buildings/Obelisks/borders.png",
 				"FromArea": { "X": 120, "Y": 0, "Width": 24, "Height": 96 },
 				"ToArea": { "X": 24, "Y": 0, "Width": 24, "Height": 96 },
-			"Update": "OnTimeChange",
 			"When": {"Water Border": "right"},
 			"Priority": "Late+3"
 		},
@@ -100,7 +91,6 @@
 			"FromFile": "assets/Buildings/Obelisks/borders.png",
 				"FromArea": { "X": 48, "Y": 48, "Width": 48, "Height": 48 },
 				"ToArea": { "X": 0, "Y": 48, "Width": 48, "Height": 48 },
-			"Update": "OnTimeChange",
 			"When": {"Water Border": "bottom"},
 			"Priority": "Late+4"
 		},
@@ -111,7 +101,6 @@
 			"FromFile": "assets/Buildings/Obelisks/borders.png",
 				"FromArea": { "X": 0, "Y": 48, "Width": 24, "Height": 48 },
 				"ToArea": { "X": 0, "Y": 48, "Width": 24, "Height": 48 },
-			"Update": "OnTimeChange",
 			"Priority": "Late+5",
 			"When": {
 				"Water Border |contains=bottom": "true",
@@ -125,7 +114,6 @@
 			"FromFile": "assets/Buildings/Obelisks/borders.png",
 				"FromArea": { "X": 24, "Y": 48, "Width": 24, "Height": 48 },
 				"ToArea": { "X": 24, "Y": 48, "Width": 24, "Height": 48 },
-			"Update": "OnTimeChange",
 			"Priority": "Late+5",
 			"When": {
 				"Water Border |contains=bottom": "true",
@@ -137,7 +125,6 @@
 			"PatchMode": "Overlay",
 			"Target": "Buildings/Water Obelisk",
 			"FromFile": "assets/Buildings/Obelisks/water_feature_{{season}}.png",
-			"Update": "OnTimeChange",
 			"Priority": "Late+6"
 		}
 	]

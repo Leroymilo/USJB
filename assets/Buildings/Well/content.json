@@ -5,7 +5,6 @@
 			"Action": "EditImage",
 			"Target": "Buildings/Well",
 			"FromFile": "assets/Buildings/Well/Well_{{season}}.png",
-			"Update": "OnTimeChange",
 			"When": {
 				"Well": "static"
 			}
@@ -15,7 +14,6 @@
 			"LogName": "Remove Well Shadow",
 			"Action": "EditData",
 			"Target": "Data/Buildings",
-			"Update": "OnTimeChange",
 			"When": {
 				"Well": "static, animated"
 			},

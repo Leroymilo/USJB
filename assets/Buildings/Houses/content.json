@@ -3,8 +3,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Buildings/houses, Buildings/houses_PaintMask",
-			"FromFile": "assets/Buildings/Houses/{{TargetWithoutPath}}_{{season}}.png",
-			"Update": "OnTimeChange"
+			"FromFile": "assets/Buildings/Houses/{{TargetWithoutPath}}_{{season}}.png"
 		}
 	]
 }

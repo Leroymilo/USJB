@@ -66,7 +66,6 @@
 			"Action":"EditImage",
 			"Target":"Buildings/Greenhouse",
 			"FromFile":"assets/Buildings/Greenhouse_{{season}}.png",
-			"Update": "OnTimeChange",
 			"When": {
 				"Greenhouse": "true"
 			}
@@ -77,7 +76,6 @@
 			"Action": "EditImage",
 			"Target": "Buildings/Junimo Hut",
 			"FromFile": "assets/Buildings/junimo_hut_{{Junimo Hut}}.png",
-			"Update": "OnTimeChange",
 			"When": {
 				"Junimo Hut": "stone, tree"
 			}
@@ -86,7 +84,6 @@
 			"LogName": "Junimo Hut remove shadow",
 			"Action": "EditData",
 			"Target": "Data/Buildings",
-			"Update": "OnTimeChange",
 			"Fields": {
 				"Junimo Hut": {
 					"DrawShadow": false
@@ -98,7 +95,6 @@
 			"Action":"EditImage",
 			"Target":"Buildings/Mill",
 			"FromFile":"assets/Buildings/Mill.png",
-			"Update": "OnTimeChange",
 			"When": {
 				"Mill": "true"
 			}
@@ -108,7 +104,6 @@
 			"Action":"EditImage",
 			"Target":"Buildings/Silo",
 			"FromFile":"assets/Buildings/Silo_{{season}}.png",
-			"Update": "OnTimeChange",
 			"When": {
 				"Silo": "true"
 			}
