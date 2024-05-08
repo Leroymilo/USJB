@@ -198,6 +198,21 @@
 			"Section": "Obelisks",
 			"AllowMultiple": true,
 			"AllowBlank": true
+		},
+
+		"Island Border": {
+			"AllowValues": "top, right, bottom, left",
+			"Default": "top, right, bottom, left",
+			"Section": "Obelisks",
+			"AllowMultiple": true,
+			"AllowBlank": true
+		},
+		"Island Corner": {
+			"AllowValues": "top-left, top-right, bottom-left, bottom-right",
+			"Default": "",
+			"Section": "Obelisks",
+			"AllowMultiple": true,
+			"AllowBlank": true
 		}
 	},
 

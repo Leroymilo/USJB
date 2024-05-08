@@ -12,6 +12,10 @@
 			"Action": "Include",
 			"FromFile": "assets/Buildings/Obelisks/desert.json"
 		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Buildings/Obelisks/island.json"
+		},
 
 		{
 			"LogName": "Obelisks data edit",
@@ -35,6 +39,14 @@
 					}
 				},
 				"Desert Obelisk": {
+					"DrawShadow": false,
+					"SortTileOffset": 2,
+					"Size": {
+						"x": 3,
+						"y": 3
+					}
+				},
+				"Island Obelisk": {
 					"DrawShadow": false,
 					"SortTileOffset": 2,
 					"Size": {
