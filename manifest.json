@@ -12,7 +12,8 @@
 	"Dependencies": [
 		{
 			"UniqueID": "spacechase0.SpaceCore",
-			"MinimumVersion": "1.23.1"
+			"MinimumVersion": "1.23.1",
+			"IsRequired": false
 		}
 	],
 	"UpdateKeys": [ "Nexus:9704" ]

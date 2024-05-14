@@ -27,6 +27,7 @@
                 }
             },
 			"When": {
+				"HasMod": "spacechase0.SpaceCore",
 				"Well": "animated"
 			}
 		},
