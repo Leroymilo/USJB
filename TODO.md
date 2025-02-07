@@ -40,7 +40,7 @@ This is very low priority. I am currently working on another mod (a lot of codin
 
 ## Craftables
 
-Not much to say about them, check this [sprite-sheet](https://github.com/Leroymilo/USJB/blob/main/assets/Craftables.png) to see which ones are in need of a re-sprite. It is mostly about machines and common decorations, no need to reskin everything. No requirements except 16x32 sprites.
+Not much to say about them, check this [sprite-sheet](https://github.com/Leroymilo/USJB/blob/main/assets/Craftables/Craftables.png) to see which ones are in need of a re-sprite. It is mostly about machines and common decorations, no need to reskin everything. No requirements except 16x32 sprites.
 
 ## Junimo House
 
