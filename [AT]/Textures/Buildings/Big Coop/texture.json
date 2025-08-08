@@ -1,0 +1,27 @@
+{
+    "ItemName": "Big Coop",
+    "Type": "Building",
+    "TextureWidth": 112,
+    "TextureHeight": 128,
+    "Keywords": [
+        "Japanese"
+    ],
+	"ManualVariations":[
+		{
+			"Id": 0,
+			"Season": ["Spring"]
+		},
+		{
+			"Id": 1,
+			"Season": ["Summer"]
+		},
+		{
+			"Id": 2,
+			"Season": ["Fall"]
+		},
+		{
+			"Id": 3,
+			"Season": ["Winter"]
+		}
+	]
+}

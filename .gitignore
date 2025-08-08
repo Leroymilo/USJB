@@ -1,4 +1,5 @@
 config.json
 *.zip
 test.sh
-\[CP\] Seasonal Japanese Buildings/
+temp*
+.venv

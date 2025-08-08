@@ -1,0 +1,51 @@
+{
+    "ItemName": "Deluxe Coop",
+    "Type": "Building",
+    "TextureWidth": 112,
+    "TextureHeight": 128,
+    "Keywords": [
+        "Japanese"
+    ],
+	"ManualVariations":[
+		{
+			"Id": 0,
+			"Name": "Original",
+			"Season": ["Spring"]
+		},
+		{
+			"Id": 1,
+			"Name": "Original",
+			"Season": ["Summer"]
+		},
+		{
+			"Id": 2,
+			"Name": "Original",
+			"Season": ["Fall"]
+		},
+		{
+			"Id": 3,
+			"Name": "Original",
+			"Season": ["Winter"]
+		},
+		{
+			"Id": 4,
+			"Name": "Variant",
+			"Season": ["Spring"]
+		},
+		{
+			"Id": 5,
+			"Name": "Variant",
+			"Season": ["Summer"]
+		},
+		{
+			"Id": 6,
+			"Name": "Variant",
+			"Season": ["Fall"]
+		},
+		{
+			"Id": 7,
+			"Name": "Variant",
+			"Season": ["Winter"]
+		}
+	]
+}
