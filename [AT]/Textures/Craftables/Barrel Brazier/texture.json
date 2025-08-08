@@ -1,0 +1,10 @@
+{
+    "ItemName": "Barrel Brazier",
+    "Type": "Craftable",
+    "TextureWidth": 16,
+    "TextureHeight": 32,
+    "Keywords": [
+        "Japanese"
+    ],
+    "Variations": 1
+}

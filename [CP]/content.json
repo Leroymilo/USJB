@@ -44,6 +44,12 @@
 			"Default": "true",
 			"Section": "Buildings"
 		},
+		"Deluxe Coop Variant": {
+			"AllowValues": "original, variant",
+			"Default": "original",
+			"Section": "Buildings",
+			"Description": "The variant was made by woxesib408 (uses Big Coop side building, removes cobweb in fall)."
+		},
 		"Houses": {
 			"AllowValues": "true, false", 
 			"Default": "true",

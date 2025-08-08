@@ -1,0 +1,14 @@
+{
+	"Changes": [
+		{
+			"Action": "EditImage",
+   			"Target": "Buildings/Coop, Buildings/Big Coop",
+			"FromFile": "assets/Buildings/Coop/{{TargetWithoutPath}}_{{season}}.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Coop, Buildings/Deluxe Coop_PaintMask",
+			"FromFile": "assets/Buildings/Coop/{{TargetWithoutPath}}_{{season}}_{{Deluxe Coop Variant}}.png"
+		}
+	]
+}

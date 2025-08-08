@@ -1,0 +1,22 @@
+{
+ "CollectiveNames":
+[
+"Iron Lamp-post",
+"Wood Lamp-post"
+],
+  "Type": "Craftable",
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "Keywords": [ "Japanese" ],
+  "ManualVariations": 
+[
+    {
+      "Id": 0,
+      "Name" : "Metalic & White"
+    },
+    {
+      "Id": 1,
+      "Name" : "Wodden & Red"
+    }
+]
+}
