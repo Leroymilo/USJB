@@ -108,6 +108,25 @@
 			"Section": "Buildings"
 		},
 
+		"SVE Premium Barn":{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Buildings",
+			"Description": "Made by marrojo2000"
+		},
+		"SVE Premium Coop":{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Buildings",
+			"Description": "Made by marrojo2000"
+		},
+		"SVE Winery":{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Buildings",
+			"Description": "Made by marrojo2000"
+		},
+
 		"Artisan Equipment": {
 			"AllowValues": "true, false", 
 			"Default": "true",

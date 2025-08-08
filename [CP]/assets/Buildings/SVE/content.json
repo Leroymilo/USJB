@@ -1,0 +1,22 @@
+{
+	"Changes": [
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/SVE_PremiumBarn, Buildings/SVE_PremiumBarn_PaintMask",
+			"FromFile": "assets/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {"SVE Premium Barn": true}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/SVE_PremiumCoop, Buildings/SVE_PremiumCoop_PaintMask",
+			"FromFile": "assets/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {"SVE Premium Coop": true}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "BBuildings/SVE_Winery, Buildings/SVE_Winery_PaintMask",
+			"FromFile": "assets/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {"SVE Winery": true}
+		}
+	]
+}

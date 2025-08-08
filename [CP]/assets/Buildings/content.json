@@ -107,6 +107,14 @@
 			"When": {
 				"Silo": "true"
 			}
+		},
+
+		{
+			"Action":"Include",
+			"FromFile": "assets/Buildings/SVE/content.json",
+			"When":{
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
 		}
 	]
 }
