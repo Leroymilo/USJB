@@ -1,5 +1,5 @@
 {
-    "CollectiveNames": ["Log Cabin", "Plank Cabin", "Stone Cabin"],
+    "CollectiveIds": ["Log Cabin", "Plank Cabin", "Stone Cabin"],
     "Type": "Building",
     "TextureWidth": 80,
     "TextureHeight": 112,

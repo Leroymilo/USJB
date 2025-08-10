@@ -1,5 +1,5 @@
 {
-    "ItemName": "Barn",
+    "ItemId": "Barn",
     "Type": "Building",
     "TextureWidth": 112,
     "TextureHeight": 128,

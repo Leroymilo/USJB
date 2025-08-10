@@ -1,5 +1,5 @@
 {
-    "ItemName": "Big Coop",
+    "ItemId": "Big Coop",
     "Type": "Building",
     "TextureWidth": 96,
     "TextureHeight": 128,
