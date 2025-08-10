@@ -1,0 +1,10 @@
+{
+	"ItemId": "Mill",
+    "Type": "Buildings",
+    "TextureWidth": 64,
+    "TextureHeight": 128,
+    "Keywords": [
+        "Japanese"
+    ],
+	"Variations": 1
+}

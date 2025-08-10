@@ -1,8 +1,8 @@
 {
     "ItemName": "Stable",
     "Type": "Building",
-    "TextureWidth": 112,
-    "TextureHeight": 128,
+    "TextureWidth": 64,
+    "TextureHeight": 96,
     "Keywords": [
         "Japanese"
     ],

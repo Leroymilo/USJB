@@ -1,8 +1,8 @@
 {
     "ItemName": "Houses",
     "Type": "Building",
-    "TextureWidth": 112,
-    "TextureHeight": 128,
+    "TextureWidth": 160,
+    "TextureHeight": 144,
     "Keywords": [
         "Japanese"
     ],

@@ -1,0 +1,85 @@
+{
+	"CollectiveNames": ["Statue Of Endless Fortune", "Statue Of Perfection"],
+	"Type": "Craftable",
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"Keywords": [ "Japanese" ],
+	"ManualVariations": [
+		{
+			"Id": 0,
+			"Name": "White Static"
+		},
+		{
+			"Id": 1,
+			"Name": "Black Static"
+		},
+		{
+			"Id": 2,
+			"Name": "White Animated",
+			"Animation": [
+				{
+					"Frame": 0,
+					"Duration": 20
+				},
+				{
+					"Frame": 1,
+					"Duration": 20
+				},
+				{
+					"Frame": 2,
+					"Duration": 20
+				},
+				{
+					"Frame": 3,
+					"Duration": 20
+				},
+				{
+					"Frame": 4,
+					"Duration": 20
+				},
+				{
+					"Frame": 5,
+					"Duration": 20
+				},
+				{
+					"Frame": 6,
+					"Duration": 20
+				}
+			]
+		},
+		{
+			"Id": 3,
+			"Name": "Black Animated",
+			"Animation": [
+				{
+					"Frame": 0,
+					"Duration": 20
+				},
+				{
+					"Frame": 1,
+					"Duration": 20
+				},
+				{
+					"Frame": 2,
+					"Duration": 20
+				},
+				{
+					"Frame": 3,
+					"Duration": 20
+				},
+				{
+					"Frame": 4,
+					"Duration": 20
+				},
+				{
+					"Frame": 5,
+					"Duration": 20
+				},
+				{
+					"Frame": 6,
+					"Duration": 20
+				}
+			]
+		}
+	]
+}

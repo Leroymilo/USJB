@@ -1,0 +1,19 @@
+{
+    "CollectiveIds": ["Doghouse", "DarkDoghouse"],
+    "Type": "Furniture",
+    "TextureWidth": 48,
+    "TextureHeight": 48,
+    "Keywords": [
+        "Japanese"
+    ],
+	"ManualVariations": [
+		{
+			"Id": 0,
+			"Name": "Normal"
+		},
+		{
+			"Id": 1,
+			"Name": "Dark"
+		}
+	]
+}

@@ -1,8 +1,8 @@
 {
-    "ItemName": "SVE_PremiumBarn",
+    "ItemId": "SVE_PremiumBarn",
     "Type": "Building",
-    "TextureWidth": 112,
-    "TextureHeight": 128,
+    "TextureWidth": 176,
+    "TextureHeight": 176,
     "Keywords": [
         "Japanese"
     ],

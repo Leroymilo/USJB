@@ -1,8 +1,8 @@
 {
     "CollectiveNames": ["Log Cabin", "Plank Cabin", "Stone Cabin"],
     "Type": "Building",
-    "TextureWidth": 112,
-    "TextureHeight": 128,
+    "TextureWidth": 80,
+    "TextureHeight": 112,
     "Keywords": [
         "Japanese"
     ],

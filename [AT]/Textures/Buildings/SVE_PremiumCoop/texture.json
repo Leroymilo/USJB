@@ -1,8 +1,8 @@
 {
-    "ItemName": "SVE_PremiumCoop",
+    "ItemId": "SVE_PremiumCoop",
     "Type": "Building",
-    "TextureWidth": 112,
-    "TextureHeight": 128,
+    "TextureWidth": 144,
+    "TextureHeight": 160,
     "Keywords": [
         "Japanese"
     ],

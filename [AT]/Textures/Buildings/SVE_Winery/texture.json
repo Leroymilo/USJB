@@ -1,8 +1,8 @@
 {
-    "ItemName": "SVE_Winery",
+    "ItemId": "SVE_Winery",
     "Type": "Building",
-    "TextureWidth": 112,
-    "TextureHeight": 128,
+    "TextureWidth": 192,
+    "TextureHeight": 144,
     "Keywords": [
         "Japanese"
     ],

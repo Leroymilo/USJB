@@ -1,7 +1,7 @@
 {
     "ItemName": "Deluxe Coop",
     "Type": "Building",
-    "TextureWidth": 112,
+    "TextureWidth": 96,
     "TextureHeight": 128,
     "Keywords": [
         "Japanese"

@@ -1,7 +1,7 @@
 {
     "ItemName": "Silo",
     "Type": "Building",
-    "TextureWidth": 112,
+    "TextureWidth": 48,
     "TextureHeight": 128,
     "Keywords": [
         "Japanese"
