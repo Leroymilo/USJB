@@ -1,11 +1,9 @@
 {
     "ItemId": "Junimo Hut",
-    "Type": "Buildings",
+    "Type": "Building",
     "TextureWidth": 48,
     "TextureHeight": 64,
-    "Keywords": [
-        "Japanese"
-    ],
+    "Keywords": ["Japanese"],
 	"ManualVariations": [
 		{
 			"Id": 0,

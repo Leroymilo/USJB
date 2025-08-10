@@ -19,31 +19,31 @@
 			"Animation": [
 				{
 					"Frame": 0,
-					"Duration": 20
+					"Duration": 200
 				},
 				{
 					"Frame": 1,
-					"Duration": 20
+					"Duration": 200
 				},
 				{
 					"Frame": 2,
-					"Duration": 20
+					"Duration": 200
 				},
 				{
 					"Frame": 3,
-					"Duration": 20
+					"Duration": 200
 				},
 				{
 					"Frame": 4,
-					"Duration": 20
+					"Duration": 200
 				},
 				{
 					"Frame": 5,
-					"Duration": 20
+					"Duration": 200
 				},
 				{
 					"Frame": 6,
-					"Duration": 20
+					"Duration": 200
 				}
 			]
 		},
@@ -53,31 +53,31 @@
 			"Animation": [
 				{
 					"Frame": 0,
-					"Duration": 20
+					"Duration": 200
 				},
 				{
 					"Frame": 1,
-					"Duration": 20
+					"Duration": 200
 				},
 				{
 					"Frame": 2,
-					"Duration": 20
+					"Duration": 200
 				},
 				{
 					"Frame": 3,
-					"Duration": 20
+					"Duration": 200
 				},
 				{
 					"Frame": 4,
-					"Duration": 20
+					"Duration": 200
 				},
 				{
 					"Frame": 5,
-					"Duration": 20
+					"Duration": 200
 				},
 				{
 					"Frame": 6,
-					"Duration": 20
+					"Duration": 200
 				}
 			]
 		}

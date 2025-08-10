@@ -1,6 +1,6 @@
 {
-	"ItemId": "Mill",
-    "Type": "Buildings",
+	"ItemName": "Mill",
+    "Type": "Building",
     "TextureWidth": 64,
     "TextureHeight": 128,
     "Keywords": [
