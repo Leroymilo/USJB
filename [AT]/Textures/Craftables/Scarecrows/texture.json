@@ -1,7 +1,8 @@
 {
-  "CollectiveName": [
+  "CollectiveNames": [
     "Scarecrow",
-    "Rarecrow"
+    "Rarecrow",
+	"Deluxe Scarecrow"
   ],
   "Type": "Craftable",
   "TextureWidth": 16,
