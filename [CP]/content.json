@@ -9,22 +9,22 @@
 		},
 
 		"Buildings": {
-			"AllowValues": "true, false", 
-			"Default": "true",
+			"AllowValues": "off, on, skins", 
+			"Default": "on",
 			"Section": "Categories",
-			"Description": "Enables/disables all farm buildings changes."
+			"Description": "Enables/disables all farm buildings changes.\nThe \"skins\" option leaves vanilla buildings unchanged but add skins (see Robin's shop)."
 		},
 		"Craftables": {
 			"AllowValues": "true, false", 
 			"Default": "true",
 			"Section": "Categories",
-			"Description": "Enables/disables all craftable items changes."
+			"Description": "Enables/disables all craftable items changes.\nDisabled automatically by the AT version."
 		},
 		"Furniture": {
 			"AllowValues": "true, false", 
 			"Default": "true",
 			"Section": "Categories",
-			"Description": "Enables/disables all furniture items changes."
+			"Description": "Enables/disables all furniture items changes.\nDisabled automatically by the AT version."
 		},
 		
 		"Barn": {
@@ -252,6 +252,17 @@
 			"When": {
 				"HasMod": "leroymilo.ModularZenGarden"
 			}
+		},
+		{
+			"Name": "AT_version",
+			"Value": "false"
+		},
+		{
+			"Name": "AT_version",
+			"Value": "true",
+			"When": {
+				"HasMod": "leroymilo.USJB.AT"
+			}
 		}
 	],
 
@@ -261,7 +272,7 @@
 			"FromFile": "assets/Buildings/content.json",
 			"When": {
 				"S.J.B.": "true",
-				"Buildings": "true"
+				"Buildings": "on, skins"
 			}
 		},
 		{
@@ -269,7 +280,8 @@
 			"FromFile": "assets/Craftables/content.json",
 			"When": {
 				"S.J.B.": "true",
-				"Craftables": "true"
+				"Craftables": "true",
+				"AT_version": "false"
 			}
 		},
 		{
@@ -277,7 +289,8 @@
 			"FromFile": "assets/Furniture/content.json",
 			"When": {
 				"S.J.B.": "true",
-				"Furniture": "true"
+				"Furniture": "true",
+				"AT_version": "false"
 			}
 		}
 	]

@@ -3,7 +3,74 @@
 		{
 			"Action": "EditImage",
    			"Target": "Buildings/Barn, Buildings/Big Barn, Buildings/Deluxe Barn, Buildings/Deluxe Barn_PaintMask",
-			"FromFile": "assets/Buildings/Barn/{{TargetWithoutPath}}_{{season}}.png"
+			"FromFile": "assets/Buildings/Barn/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {
+				"Buildings": "on"
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Barn", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Barn": {
+					"Id": "{{ModID}}.Barn",
+					"Name": "Japanese Barn",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Barn"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Big Barn", "Skins" ],
+			"Entries":{
+				"{{ModID}}.BigBarn": {
+					"Id": "{{ModID}}.BigBarn",
+					"Name": "Japanese Big Barn",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Big Barn"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Deluxe Barn", "Skins" ],
+			"Entries":{
+				"{{ModID}}.DeluxeBarn": {
+					"Id": "{{ModID}}.DeluxeBarn",
+					"Name": "Japanese Deluxe Barn",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Deluxe Barn"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Barn, {{ModID}}/Big Barn, {{ModID}}/Deluxe Barn, {{ModID}}/Deluxe Barn_PaintMask",
+			"FromFile": "assets/Buildings/Barn/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/PaintData",
+			"Entries": {
+				"{{ModID}}.DeluxeBarn": "Building/-50 50/Roof/-50 50/Trim/-50 50"
+			}
 		}
 	]
 }

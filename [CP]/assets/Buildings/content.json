@@ -63,13 +63,40 @@
 		},
 		
 		{
-			"Action":"EditImage",
-			"Target":"Buildings/Greenhouse",
-			"FromFile":"assets/Buildings/Greenhouse_{{season}}.png",
+			"Action": "EditImage",
+			"Target": "Buildings/Greenhouse",
+			"FromFile": "assets/Buildings/Greenhouse_{{season}}.png",
 			"When": {
-				"Greenhouse": "true"
+				"Greenhouse": "true",
+				"Buildings": "on"
 			}
    		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Greenhouse", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Greenhouse": {
+					"Id": "{{ModID}}.Greenhouse",
+					"Name": "Japanese Greenhouse",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Greenhouse"
+				}
+			},
+			"When": {
+				"Greenhouse": "true",
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Greenhouse",
+			"FromFile": "assets/Buildings/Greenhouse_{{season}}.png",
+			"When": {
+				"Greenhouse": "true",
+				"Buildings": "skins"
+			}
+		},
 
 		{
 			"LogName": "Junimo Hut",
@@ -77,7 +104,8 @@
 			"Target": "Buildings/Junimo Hut",
 			"FromFile": "assets/Buildings/junimo_hut_{{Junimo Hut}}.png",
 			"When": {
-				"Junimo Hut": "stone, tree"
+				"Junimo Hut": "stone, tree",
+				"Buildings": "on"
 			}
 		},
 		{
@@ -88,29 +116,113 @@
 				"Junimo Hut": {
 					"DrawShadow": false
 				}
+			},
+			"When": {
+				"Junimo Hut": "stone, tree",
+				"Buildings": "on"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Junimo Hut", "Skins" ],
+			"Entries":{
+				"{{ModID}}.JunimoHut": {
+					"Id": "{{ModID}}.JunimoHut",
+					"Name": "Japanese Junimo Hut",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/JunimoHut"
+				}
+			},
+			"When": {
+				"Junimo Hut": "stone, tree",
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/JunimoHut",
+			"FromFile": "assets/Buildings/junimo_hut_{{Junimo Hut}}.png",
+			"When": {
+				"Junimo Hut": "stone, tree",
+				"Buildings": "skins"
 			}
 		},
 		
 		{
-			"Action":"EditImage",
-			"Target":"Buildings/Mill",
-			"FromFile":"assets/Buildings/Mill.png",
+			"Action": "EditImage",
+			"Target": "Buildings/Mill",
+			"FromFile": "assets/Buildings/Mill.png",
 			"When": {
-				"Mill": "true"
+				"Mill": "true",
+				"Buildings": "on"
 			}
-   		},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Mill", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Mill": {
+					"Id": "{{ModID}}.Mill",
+					"Name": "Japanese Mill",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Mill"
+				}
+			},
+			"When": {
+				"Mill": "true",
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Mill",
+			"FromFile": "assets/Buildings/Mill.png",
+			"When": {
+				"Mill": "true",
+				"Buildings": "skins"
+			}
+		},
 		
 		{
-			"Action":"EditImage",
-			"Target":"Buildings/Silo",
-			"FromFile":"assets/Buildings/Silo_{{season}}.png",
+			"Action": "EditImage",
+			"Target": "Buildings/Silo",
+			"FromFile": "assets/Buildings/Silo_{{season}}.png",
 			"When": {
-				"Silo": "true"
+				"Silo": "true",
+				"Buildings": "on"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Silo", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Silo": {
+					"Id": "{{ModID}}.Silo",
+					"Name": "Japanese Silo",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Silo"
+				}
+			},
+			"When": {
+				"Silo": "true",
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Silo",
+			"FromFile": "assets/Buildings/Silo_{{season}}.png",
+			"When": {
+				"Silo": "true",
+				"Buildings": "skins"
 			}
 		},
 
 		{
-			"Action":"Include",
+			"Action": "Include",
 			"FromFile": "assets/Buildings/SVE/content.json",
 			"When":{
 				"HasMod": "FlashShifter.StardewValleyExpandedCP"
