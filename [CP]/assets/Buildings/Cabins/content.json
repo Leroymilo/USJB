@@ -1,10 +1,12 @@
 {
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
 	"Changes": [
 		{
 			"Action": "EditImage",
 			"Target": "Buildings/Log Cabin, Buildings/Log Cabin_PaintMask",
 			"FromFile": "assets/Buildings/Cabins/{{TargetWithoutPath}}_{{season}}.png",
 			"When": {
+				"Buildings": "on",
 				"Cabins": "Log"
 			}
 		},
@@ -13,6 +15,7 @@
 			"Target": "Buildings/Plank Cabin, Buildings/Plank Cabin_PaintMask",
 			"FromFile": "assets/Buildings/Cabins/{{TargetWithoutPath}}_{{season}}.png",
 			"When": {
+				"Buildings": "on",
 				"Cabins": "Plank"
 			}
 		},
@@ -21,7 +24,62 @@
 			"Target": "Buildings/Stone Cabin, Buildings/Stone Cabin_PaintMask",
 			"FromFile": "assets/Buildings/Cabins/{{TargetWithoutPath}}_{{season}}.png",
 			"When": {
+				"Buildings": "on",
 				"Cabins": "Stone"
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Cabin", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Log_Cabin": {
+					"Id": "{{ModID}}.Log_Cabin",
+					"Name": "Japanese Log Cabin",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Log Cabin"
+				},
+				"{{ModID}}.Plank_Cabin": {
+					"Id": "{{ModID}}.Plank_Cabin",
+					"Name": "Japanese Plank Cabin",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Plank Cabin"
+				},
+				"{{ModID}}.Stone_Cabin": {
+					"Id": "{{ModID}}.Stone_Cabin",
+					"Name": "Japanese Stone Cabin",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Stone Cabin"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Log Cabin, {{ModID}}/Plank Cabin, {{ModID}}/Stone Cabin",
+			"FromFile": "assets/Buildings/Cabins/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Log Cabin_PaintMask, {{ModID}}/Plank Cabin_PaintMask, {{ModID}}/Stone Cabin_PaintMask",
+			"FromFile": "assets/Buildings/Cabins/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/PaintData",
+			"Entries": {
+				"{{ModID}}.Log_Cabin": "Building/-50 50/Roof/-50 50/Trim/-50 50",
+				"{{ModID}}.Plank_Cabin": "Building/-50 50/Roof/-50 50/Trim/-50 50",
+				"{{ModID}}.Stone_Cabin": "Building/-50 50/Roof/-50 50/Trim/-50 50"
 			}
 		}
 	]

@@ -1,14 +1,115 @@
 {
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
 	"Changes": [
 		{
 			"Action": "EditImage",
    			"Target": "Buildings/Coop, Buildings/Big Coop",
-			"FromFile": "assets/Buildings/Coop/{{TargetWithoutPath}}_{{season}}.png"
+			"FromFile": "assets/Buildings/Coop/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {
+				"Buildings": "on"
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Coop", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Coop": {
+					"Id": "{{ModID}}.Coop",
+					"Name": "Japanese Coop",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Coop"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
 		},
 		{
-			"Action": "EditImage",
-			"Target": "Buildings/Deluxe Coop, Buildings/Deluxe Coop_PaintMask",
-			"FromFile": "assets/Buildings/Coop/{{TargetWithoutPath}}_{{season}}_{{Deluxe Coop Variant}}.png"
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Big Coop", "Skins" ],
+			"Entries":{
+				"{{ModID}}.BigCoop": {
+					"Id": "{{ModID}}.BigCoop",
+					"Name": "Japanese Big Coop",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Big Coop"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Deluxe Coop", "Skins" ],
+			"Entries":{
+				"{{ModID}}.DeluxeCoop_original": {
+					"Id": "{{ModID}}.DeluxeCoop_original",
+					"Name": "Japanese Deluxe Coop (original by SonreirAngel)",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/DeluxeCoop_original"
+				},
+				"{{ModID}}.DeluxeCoop_variant": {
+					"Id": "{{ModID}}.DeluxeCoop_variant",
+					"Name": "Japanese Deluxe Coop (variant by woxesib408)",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/DeluxeCoop_variant"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Coop, {{ModID}}/Big Coop",
+			"FromFile": "assets/Buildings/Coop/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/DeluxeCoop_original",
+			"FromFile": "assets/Buildings/Coop/Deluxe Coop_{{season}}_original.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/DeluxeCoop_original_PaintMask",
+			"FromFile": "assets/Buildings/Coop/Deluxe Coop_PaintMask_{{season}}_original.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/DeluxeCoop_variant",
+			"FromFile": "assets/Buildings/Coop/Deluxe Coop_{{season}}_variant.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/DeluxeCoop_variant_PaintMask",
+			"FromFile": "assets/Buildings/Coop/Deluxe Coop_PaintMask_{{season}}_variant.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/PaintData",
+			"Entries": {
+				"{{ModID}}.DeluxeCoop": "Building/-50 50/Roof/-50 50/Trim/-50 50"
+			}
 		}
 	]
 }

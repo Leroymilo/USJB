@@ -1,20 +1,33 @@
 {
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
 	"Changes": [
 		{
 			"Action": "Include",
-			"FromFile": "assets/Buildings/Obelisks/earth.json"
+			"FromFile": "assets/Buildings/Obelisks/earth.json",
+			"When": {
+				"Buildings": "on"
+			}
 		},
 		{
 			"Action": "Include",
-			"FromFile": "assets/Buildings/Obelisks/water.json"
+			"FromFile": "assets/Buildings/Obelisks/water.json",
+			"When": {
+				"Buildings": "on"
+			}
 		},
 		{
 			"Action": "Include",
-			"FromFile": "assets/Buildings/Obelisks/desert.json"
+			"FromFile": "assets/Buildings/Obelisks/desert.json",
+			"When": {
+				"Buildings": "on"
+			}
 		},
 		{
 			"Action": "Include",
-			"FromFile": "assets/Buildings/Obelisks/island.json"
+			"FromFile": "assets/Buildings/Obelisks/island.json",
+			"When": {
+				"Buildings": "on"
+			}
 		},
 
 		{
@@ -54,6 +67,113 @@
 						"y": 3
 					}
 				}
+			},
+			"When": {
+				"Buildings": "on"
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Earth Obelisk", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Earth_Obelisk": {
+					"Id": "{{ModID}}.Earth_Obelisk",
+					"Name": "Japanese Earth Obelisk",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/earth"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Water Obelisk", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Water_Obelisk": {
+					"Id": "{{ModID}}.Water_Obelisk",
+					"Name": "Japanese Water Obelisk",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/water"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Desert Obelisk", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Desert_Obelisk": {
+					"Id": "{{ModID}}.Desert_Obelisk",
+					"Name": "Japanese Desert Obelisk",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/desert"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Island Obelisk", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Island_Obelisk": {
+					"Id": "{{ModID}}.Island_Obelisk",
+					"Name": "Japanese Island Obelisk",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/island"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/earth, {{ModID}}/water, {{ModID}}/desert, {{ModID}}/island",
+			"FromFile": "assets/Buildings/Obelisks/{{TargetWithoutPath}}_base.png",
+			"When": {
+				"Buildings": "skins",
+				"Season": "spring, summer, fall"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/earth, {{ModID}}/water, {{ModID}}/desert, {{ModID}}/island",
+			"FromFile": "assets/Buildings/Obelisks/{{TargetWithoutPath}}_base_winter.png",
+			"When": {
+				"Buildings": "skins",
+				"Season": "winter"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "{{ModID}}/earth, {{ModID}}/water, {{ModID}}/desert, {{ModID}}/island",
+			"FromFile": "assets/Buildings/Obelisks/full_border.png",
+			"Priority": "Early",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "{{ModID}}/earth, {{ModID}}/water, {{ModID}}/desert, {{ModID}}/island",
+			"FromFile": "assets/Buildings/Obelisks/{{TargetWithoutPath}}_feature_{{season}}.png",
+			"Priority": "Late",
+			"When": {
+				"Buildings": "skins"
 			}
 		}
 	]

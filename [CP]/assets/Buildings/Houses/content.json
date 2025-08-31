@@ -1,9 +1,47 @@
 {
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
 	"Changes": [
 		{
 			"Action": "EditImage",
 			"Target": "Buildings/houses, Buildings/houses_PaintMask",
-			"FromFile": "assets/Buildings/Houses/{{TargetWithoutPath}}_{{season}}.png"
+			"FromFile": "assets/Buildings/Houses/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {
+				"Buildings": "on"
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Farmhouse", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Farmhouse": {
+					"Id": "{{ModID}}.Farmhouse",
+					"Name": "Japanese Farmhouse",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/houses"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/houses, {{ModID}}/houses_PaintMask",
+			"FromFile": "assets/Buildings/Houses/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/PaintData",
+			"Entries": {
+				"{{ModID}}.Farmhouse": "Building/-50 50/Roof/-50 50/Trim/-50 50"
+			}
 		}
 	]
 }

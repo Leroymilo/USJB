@@ -1,1 +1,0 @@
-Original AT USJCraftables by marrojo2000: https://drive.google.com/drive/folders/1R8vsw5pDBTc9I4EMeLMVcs5i7hSEigVh?usp=sharing

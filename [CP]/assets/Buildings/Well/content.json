@@ -1,4 +1,5 @@
 {
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
 	"Changes": [
 		{
 			"LogName": "Static Well",
@@ -6,6 +7,7 @@
 			"Target": "Buildings/Well",
 			"FromFile": "assets/Buildings/Well/Well_{{season}}.png",
 			"When": {
+				"Buildings": "on",
 				"Well": "static"
 			}
    		},
@@ -27,6 +29,7 @@
                 }
             },
 			"When": {
+				"Buildings": "on",
 				"HasMod": "spacechase0.SpaceCore",
 				"Well": "animated"
 			}
@@ -37,6 +40,7 @@
 			"Action": "EditData",
 			"Target": "Data/Buildings",
 			"When": {
+				"Buildings": "on",
 				"Well": "static, animated"
 			},
 			
@@ -44,6 +48,54 @@
 				"Well": {
 					"DrawShadow": false
 				}
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Well", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Well": {
+					"Id": "{{ModID}}.Well",
+					"Name": "Japanese Well",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Well"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Well",
+			"FromFile": "assets/Buildings/Well/Well_{{season}}.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"LogName": "Animated Well skin",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "leroymilo.USJB_Buildings/Well": {
+                    "TargetTexture": "{{ModID}}/Well",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 48,
+                        "Height": 80
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Buildings/Well/Well_{{season}}_anim.png}}:0..11@20"
+                }
+            },
+			"When": {
+				"Buildings": "skins",
+				"HasMod": "spacechase0.SpaceCore",
+				"Well": "animated"
 			}
 		}
 	]

@@ -1,17 +1,24 @@
 {
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
 	"Changes": [
 		{
 			"Action": "EditImage",
 			"Target": "Buildings/Slime Hutch",
 			"FromFile": "assets/Buildings/Slime Hutch/Slime Hutch_{{season}}.png",
-			"When": {"Slime Hutch": "normal"}
+			"When": {
+				"Buildings": "on",
+				"Slime Hutch": "normal"
+			}
 		},
 
 		{
 			"Action": "Load",
 			"Target": "Buildings/Slime Hutch",
 			"FromFile": "assets/Buildings/Slime Hutch/Big Slime Hutch_{{season}}.png",
-			"When": {"Slime Hutch": "big"}
+			"When": {
+				"Buildings": "on",
+				"Slime Hutch": "big"
+			}
 		},
 		{
 			"LogName": "Big Slime Hutch data edit",
@@ -35,7 +42,36 @@
 					}
 				}
 			},
-			"When": {"Slime Hutch": "big"}
+			"When": {
+				"Buildings": "on",
+				"Slime Hutch": "big"
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Slime Hutch", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Slime_Hutch": {
+					"Id": "{{ModID}}.Slime_Hutch",
+					"Name": "Japanese Slime Hutch",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Slime Hutch"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Slime Hutch",
+			"FromFile": "assets/Buildings/Slime Hutch/Slime Hutch_{{season}}.png",
+			"When": {
+				"Buildings": "skins"
+			}
 		}
 	]
 }

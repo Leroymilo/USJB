@@ -4,7 +4,7 @@
 	"Version": "2.4.1",
 	"Description": "An update of Sonreirblah's Japanese Buildings mod for the latest version of Stardew Valley.",
 	"UniqueID": "leroymilo.USJB",
-	"MinimumApiVersion": "4.0",
+	"MinimumApiVersion": "4.2",
 	"MinimumGameVersion": "1.6",
 	"ContentPackFor":{
 		"UniqueID": "Pathoschild.ContentPatcher"
@@ -12,7 +12,7 @@
 	"Dependencies": [
 		{
 			"UniqueID": "spacechase0.SpaceCore",
-			"MinimumVersion": "1.23.1",
+			"MinimumVersion": "1.23",
 			"IsRequired": false
 		}
 	],

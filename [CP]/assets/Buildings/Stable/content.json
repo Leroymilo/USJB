@@ -1,9 +1,47 @@
 {
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
 	"Changes": [
 		{
 			"Action": "EditImage",
 			"Target": "Buildings/Stable, Buildings/Stable_PaintMask",
-			"FromFile": "assets/Buildings/Stable/{{TargetWithoutPath}}_{{season}}.png"
+			"FromFile": "assets/Buildings/Stable/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {
+				"Buildings": "on"
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Stable", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Stable": {
+					"Id": "{{ModID}}.Stable",
+					"Name": "Japanese Stable",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Stable"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Stable, {{ModID}}/Stable_PaintMask",
+			"FromFile": "assets/Buildings/Stable/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/PaintData",
+			"Entries": {
+				"{{ModID}}.Stable": "Building/-50 50/Roof/-50 50/Trim/-50 50"
+			}
 		}
 	]
 }

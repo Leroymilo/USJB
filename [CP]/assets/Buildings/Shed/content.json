@@ -1,10 +1,12 @@
 {
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
 	"Changes": [
 		{
 			"Action": "EditImage",
 			"Target": "Buildings/Shed",
 			"FromFile": "assets/Buildings/Shed/Shed_{{season}}_{{Shed}}.png",
 			"When": {
+				"Buildings": "on",
 				"Shed": "shop, tea"
 			}
 		},
@@ -13,6 +15,7 @@
 			"Target": "Buildings/Big Shed",
 			"FromFile": "assets/Buildings/Shed/Shed_{{season}}_{{Big Shed}}.png",
 			"When": {
+				"Buildings": "on",
 				"Big Shed": "shop, tea"
 			}
 		},
@@ -21,7 +24,95 @@
 			"Target": "Buildings/Big Shed_PaintMask",
 			"FromFile": "assets/Buildings/Shed/Shed_PaintMask_{{season}}_{{Big Shed}}.png",
 			"When": {
+				"Buildings": "on",
 				"Big Shed": "shop, tea"
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Shed", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Shed_shop": {
+					"Id": "{{ModID}}.Shed_shop",
+					"Name": "Japanese Shed (shop style)",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Shed_shop"
+				},
+				"{{ModID}}.Shed_tea": {
+					"Id": "{{ModID}}.Shed_tea",
+					"Name": "Japanese Shed (tea style)",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Shed_tea"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "Big Shed", "Skins" ],
+			"Entries":{
+				"{{ModID}}.Shed_shop": {
+					"Id": "{{ModID}}.Shed_shop",
+					"Name": "Japanese Big Shed (shop style)",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Shed_shop"
+				},
+				"{{ModID}}.Shed_tea": {
+					"Id": "{{ModID}}.Shed_tea",
+					"Name": "Japanese Big Shed (tea style)",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/Shed_tea"
+				}
+			},
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Shed_shop",
+			"FromFile": "assets/Buildings/Shed/Shed_{{Season}}_shop.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Shed_shop_PaintMask",
+			"FromFile": "assets/Buildings/Shed/Shed_PaintMask_{{Season}}_shop.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Shed_tea",
+			"FromFile": "assets/Buildings/Shed/Shed_{{Season}}_tea.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/Shed_tea_PaintMask",
+			"FromFile": "assets/Buildings/Shed/Shed_PaintMask_{{Season}}_tea.png",
+			"When": {
+				"Buildings": "skins"
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/PaintData",
+			"Entries": {
+				"{{ModID}}.Shed_shop": "Building/-50 50/Roof/-50 50/Trim/-50 50",
+				"{{ModID}}.Shed_tea": "Building/-50 50/Roof/-50 50/Trim/-50 50"
 			}
 		}
 	]

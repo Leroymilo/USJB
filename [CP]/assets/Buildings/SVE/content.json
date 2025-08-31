@@ -1,22 +1,122 @@
 {
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
 	"Changes": [
 		{
 			"Action": "EditImage",
 			"Target": "Buildings/SVE_PremiumBarn, Buildings/SVE_PremiumBarn_PaintMask",
 			"FromFile": "assets/{{TargetWithoutPath}}_{{season}}.png",
-			"When": {"SVE Premium Barn": true}
+			"When": {
+				"Buildings": "on",
+				"SVE Premium Barn": true
+			}
 		},
 		{
 			"Action": "EditImage",
 			"Target": "Buildings/SVE_PremiumCoop, Buildings/SVE_PremiumCoop_PaintMask",
 			"FromFile": "assets/{{TargetWithoutPath}}_{{season}}.png",
-			"When": {"SVE Premium Coop": true}
+			"When": {
+				"Buildings": "on",
+				"SVE Premium Coop": true
+			}
 		},
 		{
 			"Action": "EditImage",
 			"Target": "BBuildings/SVE_Winery, Buildings/SVE_Winery_PaintMask",
 			"FromFile": "assets/{{TargetWithoutPath}}_{{season}}.png",
-			"When": {"SVE Winery": true}
+			"When": {
+				"Buildings": "on",
+				"SVE Winery": true
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "SVE_PremiumBarn", "Skins" ],
+			"Entries":{
+				"{{ModID}}.SVE_PremiumBarn": {
+					"Id": "{{ModID}}.SVE_PremiumBarn",
+					"Name": "Japanese Premium Barn for SVE",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/SVE_PremiumBarn"
+				}
+			},
+			"When": {
+				"Buildings": "skins",
+				"SVE Premium Barn": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "SVE_PremiumCoop", "Skins" ],
+			"Entries":{
+				"{{ModID}}.SVE_PremiumCoop": {
+					"Id": "{{ModID}}.SVE_PremiumCoop",
+					"Name": "Japanese Premium Coop for SVE",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/SVE_PremiumCoop"
+				}
+			},
+			"When": {
+				"Buildings": "skins",
+				"SVE Premium Coop": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"TargetField": [ "SVE_Winery", "Skins" ],
+			"Entries":{
+				"{{ModID}}.SVE_Winery": {
+					"Id": "{{ModID}}.SVE_Winery",
+					"Name": "Japanese Winery for SVE",
+					"Description": "Added from Updated Seasonal Japanese Buildings",
+					"Texture": "{{ModID}}/SVE_Winery"
+				}
+			},
+			"When": {
+				"Buildings": "skins",
+				"SVE Winery": true
+			}
+		},
+
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/SVE_PremiumBarn, {{ModID}}/SVE_PremiumBarn_PaintMask",
+			"FromFile": "assets/Buildings/SVE/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {
+				"Buildings": "skins",
+				"SVE Premium Barn": true
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/SVE_PremiumCoop, {{ModID}}/SVE_PremiumCoop_PaintMask",
+			"FromFile": "assets/Buildings/SVE/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {
+				"Buildings": "skins",
+				"SVE Premium Coop": true
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "{{ModID}}/SVE_Winery, {{ModID}}/SVE_Winery_PaintMask",
+			"FromFile": "assets/Buildings/SVE/{{TargetWithoutPath}}_{{season}}.png",
+			"When": {
+				"Buildings": "skins",
+				"SVE Winery": true
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/PaintData",
+			"Entries": {
+				"{{ModID}}.SVE_PremiumBarn": "Building/-50 50/Roof/-50 50/Trim/-50 50",
+				"{{ModID}}.SVE_PremiumCoop": "Building/-50 50/Roof/-50 50/Trim/-50 50",
+				"{{ModID}}.SVE_Winery": "Building/-50 50/Roof/-50 50/Trim/-50 50"
+			}
 		}
 	]
 }

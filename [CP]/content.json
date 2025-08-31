@@ -1,5 +1,6 @@
 {
-	"Format": "2.0.0",
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Format": "2.7.0",
 	"ConfigSchema": {
 		"S.J.B.": {
 			"AllowValues": "true, false",

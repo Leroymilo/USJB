@@ -1,10 +1,11 @@
 {
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
 	"Changes": [
 		{
 			"LogName": "Furniture - Doghouses",
 			"Action": "EditImage",
 			"Target": "TileSheets/furniture_3",
-			"FromFile": "assets/Furniture/Doghouses.png",
+			"FromFile": "assetsFurnitureDoghouses.png",
 				"FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 48 },
 				"ToArea": 	{ "X": 112, "Y": 192, "Width": 96, "Height": 48 },
 			"When": {
