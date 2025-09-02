@@ -1,13 +1,14 @@
 {
 	"Name": "[CP] Seasonal Japanese Buildings",
 	"Author": "leroymilo",
-	"Version": "2.4.1",
+	"Version": "2.5.1",
 	"Description": "An update of Sonreirblah's Japanese Buildings mod for the latest version of Stardew Valley.",
 	"UniqueID": "leroymilo.USJB",
-	"MinimumApiVersion": "4.2",
+	"MinimumApiVersion": "4.3",
 	"MinimumGameVersion": "1.6",
 	"ContentPackFor":{
-		"UniqueID": "Pathoschild.ContentPatcher"
+		"UniqueID": "Pathoschild.ContentPatcher",
+        "MinimumVersion": "2.7.0"
 	},
 	"Dependencies": [
 		{

@@ -9,6 +9,14 @@
 				"Buildings": "on"
 			}
 		},
+		{
+			"Action": "EditImage",
+   			"Target": "Buildings/Deluxe Coop, Buildings/Deluxe Coop_PaintMask",
+			"FromFile": "assets/Buildings/Coop/{{TargetWithoutPath}}_{{season}}_{{Deluxe Coop Variant}}.png",
+			"When": {
+				"Buildings": "on"
+			}
+		},
 
 		{
 			"Action": "EditData",
@@ -108,7 +116,8 @@
 			"Action": "EditData",
 			"Target": "Data/PaintData",
 			"Entries": {
-				"{{ModID}}.DeluxeCoop": "Building/-50 50/Roof/-50 50/Trim/-50 50"
+				"{{ModID}}.DeluxeCoop_original": "Building/-50 50/Roof/-50 50/Trim/-50 50",
+				"{{ModID}}.DeluxeCoop_variant": "Building/-50 50/Roof/-50 50/Trim/-50 50"
 			}
 		}
 	]

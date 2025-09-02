@@ -1,13 +1,14 @@
 {
     "Name": "[AT] Seasonal Japanese Buildings",
     "Author": "marrojo2000 & leroymilo",
-    "Version": "2.4.1",
-    "MinimumApiVersion": "2.4.1",
+    "Version": "2.5.1",
     "Description": "An Alternative Texture version of Sonreirblah's Japanese Buildings mod for the latest version of Stardew Valley.",
     "UniqueID": "leroymilo.USJB.AT",
+	"MinimumApiVersion": "4.3",
+	"MinimumGameVersion": "1.6",
     "ContentPackFor": {
         "UniqueID": "PeacefulEnd.AlternativeTextures",
-        "MinimumVersion": "6.10.4"
+        "MinimumVersion": "8.0.0"
     },
 	"UpdateKeys": [ "Nexus:9704" ]
 }

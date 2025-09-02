@@ -5,7 +5,7 @@
 			"LogName": "Furniture - Doghouses",
 			"Action": "EditImage",
 			"Target": "TileSheets/furniture_3",
-			"FromFile": "assetsFurnitureDoghouses.png",
+			"FromFile": "assets/Furniture/Doghouses.png",
 				"FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 48 },
 				"ToArea": 	{ "X": 112, "Y": 192, "Width": 96, "Height": 48 },
 			"When": {

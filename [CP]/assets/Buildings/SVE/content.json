@@ -4,7 +4,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Buildings/SVE_PremiumBarn, Buildings/SVE_PremiumBarn_PaintMask",
-			"FromFile": "assets/{{TargetWithoutPath}}_{{season}}.png",
+			"FromFile": "assets/Buildings/SVE/{{TargetWithoutPath}}_{{season}}.png",
 			"When": {
 				"Buildings": "on",
 				"SVE Premium Barn": true
@@ -13,7 +13,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Buildings/SVE_PremiumCoop, Buildings/SVE_PremiumCoop_PaintMask",
-			"FromFile": "assets/{{TargetWithoutPath}}_{{season}}.png",
+			"FromFile": "assets/Buildings/SVE/{{TargetWithoutPath}}_{{season}}.png",
 			"When": {
 				"Buildings": "on",
 				"SVE Premium Coop": true
@@ -21,8 +21,8 @@
 		},
 		{
 			"Action": "EditImage",
-			"Target": "BBuildings/SVE_Winery, Buildings/SVE_Winery_PaintMask",
-			"FromFile": "assets/{{TargetWithoutPath}}_{{season}}.png",
+			"Target": "Buildings/SVE_Winery, Buildings/SVE_Winery_PaintMask",
+			"FromFile": "assets/Buildings/SVE/{{TargetWithoutPath}}_{{season}}.png",
 			"When": {
 				"Buildings": "on",
 				"SVE Winery": true
@@ -32,7 +32,7 @@
 		{
 			"Action": "EditData",
 			"Target": "Data/Buildings",
-			"TargetField": [ "SVE_PremiumBarn", "Skins" ],
+			"TargetField": [ "FlashShifter.StardewValleyExpandedCP_PremiumBarn", "Skins" ],
 			"Entries":{
 				"{{ModID}}.SVE_PremiumBarn": {
 					"Id": "{{ModID}}.SVE_PremiumBarn",
@@ -49,7 +49,7 @@
 		{
 			"Action": "EditData",
 			"Target": "Data/Buildings",
-			"TargetField": [ "SVE_PremiumCoop", "Skins" ],
+			"TargetField": [ "FlashShifter.StardewValleyExpandedCP_PremiumCoop", "Skins" ],
 			"Entries":{
 				"{{ModID}}.SVE_PremiumCoop": {
 					"Id": "{{ModID}}.SVE_PremiumCoop",
@@ -66,7 +66,7 @@
 		{
 			"Action": "EditData",
 			"Target": "Data/Buildings",
-			"TargetField": [ "SVE_Winery", "Skins" ],
+			"TargetField": [ "FlashShifter.StardewValleyExpandedCP_Winery", "Skins" ],
 			"Entries":{
 				"{{ModID}}.SVE_Winery": {
 					"Id": "{{ModID}}.SVE_Winery",
